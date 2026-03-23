@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Mobius PBL Project</string>
+    <string name="invalid_request_message">잘못된 요청입니다</string>
 </resources>
