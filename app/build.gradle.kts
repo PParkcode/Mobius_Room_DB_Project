@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     kotlin("kapt")
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.21"
 }
 
 android {
@@ -40,9 +41,7 @@ android {
     }
 
     composeOptions {
-        // Kotlin 2.x에서 Compose Compiler Extension 버전은 프로젝트 빌드에 맞춰야 합니다.
-        // 추후 빌드 오류가 나면 이 값/의존성 버전을 조정합니다.
-        kotlinCompilerExtensionVersion = "2.0.0"
+        // compose compiler plugin이 동작할 때, extension version을 별도 지정하지 않습니다.
     }
 }
 

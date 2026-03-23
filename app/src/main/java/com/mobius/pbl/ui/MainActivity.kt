@@ -2,6 +2,7 @@ package com.mobius.pbl.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.lifecycle.ViewModelProvider
 import com.mobius.pbl.data.AppDatabaseProvider
 import com.mobius.pbl.data.ItemRepository
