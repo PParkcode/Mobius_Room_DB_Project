@@ -31,6 +31,9 @@ import com.mobius.pbl.domain.TitleValidator
  * @file ItemsScreen.kt
  * @fn ItemsScreen
  * @brief Compose UI (목록/추가/삭제/flag 토글)를 구성합니다.
+ * @param viewModel UI 로직 및 데이터 처리를 담당하는 ViewModel
+ * @date 2026-03-23
+ * @author Gemini
  */
 @Composable
 fun ItemsScreen(
@@ -96,7 +99,13 @@ fun ItemsScreen(
 }
 
 /**
+ * @fn ItemRow
  * @brief 하나의 아이템 행을 표시합니다.
+ * @param item 표시할 아이템 엔티티
+ * @param onToggle flag 스위치 토글 시 콜백
+ * @param onDelete 삭제 버튼 클릭 시 콜백
+ * @date 2026-03-23
+ * @author Gemini
  */
 @Composable
 private fun ItemRow(
@@ -130,4 +139,3 @@ private fun ItemRow(
         }
     }
 }
-
